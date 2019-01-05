@@ -7,11 +7,11 @@ When you start the container with
 
 	docker run <OPTIONS> adamay909/calibre <CALIBRE_SERVER_OPTS>
 
-It will simply run
+Inside the container will simply run
 
 	calibre-server <CALIBRE_SERVER_OPTS>
 
-Inside the container. So you can simply consult the [Calibre 
+So you can simply consult the [Calibre 
 ducumentations](https://manual.calibre-ebook.com/generated/en/calibre-server.html) 
 for the possible options for calibre-server. The only thing to keep in mind is 
 that the paths you give to calibre-server are those inside the container. If 
