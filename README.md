@@ -7,7 +7,7 @@ When you start the container with
 
 	docker run <OPTIONS> adamay909/calibre <CALIBRE_SERVER_OPTS>
 
-Inside the container will simply run
+Inside the container this will run
 
 	calibre-server <CALIBRE_SERVER_OPTS>
 
