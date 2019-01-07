@@ -5,9 +5,14 @@ Container that runs calibre-server to expose a
 
 The Dockerfile is available at [https://github.com/adamay909/calibre-docker](https://github.com/adamay909/calibre-docker).
 
+A prebuilt image is available on Docker Hub:
+	
+	docker pull adamaymas/calibre
+
+
 When you start the container with
 
-	docker run <OPTIONS> adamay909/calibre <CALIBRE_SERVER_OPTS>
+	docker run <OPTIONS> adamaymas/calibre <CALIBRE_SERVER_OPTS>
 
 Inside the container this will run
 
@@ -28,7 +33,7 @@ You can start the server with something like
 
 	docker run -v <LOCATION OF LIBRARY>:/calibre \
 		   -p 8080:8080\
-		   adamay909/calibre /calibre
+		   adamaymas/calibre /calibre
 
 Note that the default UID:GID for calibre-server is set to 1001:1001. Change it 
 to suit your needs with the --user option for docker run (or change the 
@@ -55,9 +60,6 @@ entrypoint by doing something like:
 
 	docker run --entrypoint COMMAND \
 		   <OPTIONS> \
-		   adamay909/calibre <OPTIONS_TO_COMMAND>
-
-
-
+		   adamaymas/calibre <OPTIONS_TO_COMMAND>
 
  
