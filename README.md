@@ -3,6 +3,8 @@
 Container that runs calibre-server to expose a 
 [Calibre](https://calibre-ebook.com/) library as a web page.
 
+The Dockerfile is available at [https://github.com/adamay909/calibre-docker](https://github.com/adamay909/calibre-docker).
+
 When you start the container with
 
 	docker run <OPTIONS> adamay909/calibre <CALIBRE_SERVER_OPTS>
